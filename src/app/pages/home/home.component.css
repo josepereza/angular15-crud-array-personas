@@ -10,24 +10,19 @@
 
 }
 .texto{
+width: 40%;
 
-z-index: 100;
-font-size: 3em;
+}
+p{
+    font-size: 5em;
 font-weight: bold;
 }
 .imagen{
 
+width: 60%;
+}
 
-opacity: 0.3;
-}
-img{
-    font-size: 5em;
-    margin-bottom: 50px;
-}
-p{
-    font-size: 1.5em;
-}
 .btn {
-    font-size: 0.7em;
+    font-size: 1.7em;
     padding: 10px 50px;
     }
