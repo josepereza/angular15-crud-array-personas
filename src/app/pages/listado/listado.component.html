@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<br>
+<div class="container" >
+    <div   class="listado">
+
+        <div *ngFor="let item of personas" class="card" >
+            <div [@fadeIn]  class="card-body" style="width: 18rem;">
+              <h5 class="card-title">{{item.nombre}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{item.apellido}}</h6>
+              <p class="card-text">id: {{item.id}}</p>
+              <p class="card-text"></p>
+              <a class="btn btn-primary"  href="#" [routerLink]="['/modificaciones', item.id]" >Modificar</a>
+              <a class="btn btn-danger ms-2" (click)="eliminar(item.id!)" >Eliminar</a>
+            </div>
+    </div>
+</div>
+</div>
+
+
+
+    

@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="formulario">
+    <form [formGroup]="personaFormulario" (ngSubmit)="onSubmit()">
+        <label for="nombre">Nombre</label>
+     <input class="form-control" id="nombre" type="text" formControlName="nombre">
+     <label for="apellido">Apellido</label>
+     <input class="form-control" id="apellido" type="text" formControlName="apellido">
+     <label for="correo">Correo</label>
+     <input class="form-control" id="correo" type="text" formControlName="correo">
+<button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+</div>
+<button class="btn btn-info" (click)="volver()">Volver</button>
+
+</div>
+
